@@ -1,5 +1,19 @@
 import React from "react";
+import Header from "../ui/Header";
+import Banner from "../ui/Banner";
+import { Link } from "react-router-dom";
 
-export default function Error() {
-  return <div>Error</div>;
-}
+
+const Error = () => {
+  return (
+      <Header>
+        <Banner title="404" subtitle="page not found">
+          <Link to="/" className="btn-primary">
+            return home
+          </Link>
+        </Banner>
+      </Header>
+  );
+};
+
+export default Error;
