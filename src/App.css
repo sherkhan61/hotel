@@ -200,7 +200,7 @@ img {
   }
 }
 /* end of navbar */
-/* Hero */
+/* Header */
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
@@ -213,7 +213,7 @@ img {
   background-image: url("./assets/images/mainbg.jpg");
   min-height: 60vh;
 }
-/* End of Hero */
+/* End of Header */
 /* Banner */
 .banner {
   display: inline-block;

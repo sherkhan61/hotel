@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import RoomProvider from "./lib/context";
 import Navbar from "./ui/Navbar";
 import "./App.css";
+import {Routes} from "./Routes";
+
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       <RoomProvider>
         <BrowserRouter>
           <Navbar />
-          <h1>Home</h1>
+          <Routes />
         </BrowserRouter>
       </RoomProvider>
     </>
