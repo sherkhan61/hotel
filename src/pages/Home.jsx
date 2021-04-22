@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../ui/Header";
-import Banner from "../features/Banner";
+import Banner from "../ui/Banner";
 import { Link } from "react-router-dom";
-import Services from "../features/Services";
-import FeaturedRooms from "../features/FeaturedRooms";
+import Services from "../features/home/Services";
+import FeaturedRooms from "../features/home/FeaturedRooms";
 
 const Home = () => {
   return (
