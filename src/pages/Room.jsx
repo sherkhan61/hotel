@@ -6,6 +6,13 @@ import Banner from "../ui/Banner";
 import { Link, withRouter } from "react-router-dom";
 import StyledHeader from "../ui/StyledHeader";
 
+import { FaDollarSign } from "react-icons/fa";
+import { IoIosResize } from "react-icons/io";
+import { IoMdPerson } from "react-icons/io";
+import { MdPets } from "react-icons/md";
+import { MdFreeBreakfast } from "react-icons/md";
+
+
 class Room extends Component {
   constructor(props) {
     super(props);
@@ -75,14 +82,28 @@ class Room extends Component {
               </article>
               <article className="info">
                 <h3>info</h3>
-                <h6>price : ${price}</h6>
-                <h6>size : {size} SQFT</h6>
                 <h6>
-                  max capacity :
-                  {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                  <i>{<FaDollarSign />}</i>Price: <span>${price}</span>
                 </h6>
-                <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-                <h6>{breakfast && "free breakfast included"}</h6>
+                <h6>
+                  <i>
+                    <IoIosResize />
+                  </i>
+                  Size: <span>{size} SQFT</span>
+                </h6>
+                <h6>
+                  <i>{<IoMdPerson />}</i>
+                  Max capacity:{" "}
+                  <span>
+                  {capacity > 1 ? `${capacity} People` : `${capacity} person`}
+                </span>
+                </h6>
+                <h6>
+                  <i>{<MdPets />}</i>
+                  <span>{pets ? "pets allowed" : "No pets allowed"}</span>
+                </h6>
+
+                {breakfast && <h6><i><MdFreeBreakfast /></i><span>free breakfast included</span></h6>}
               </article>
             </div>
           </section>
